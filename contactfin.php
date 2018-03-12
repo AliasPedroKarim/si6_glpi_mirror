@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/glpi.ico">
 
     <title>GLPI - Mirror</title>
 
@@ -40,8 +40,6 @@
 
     <script language="JavaScript" type="text/javascript" src="assets/js/indexjs.js"></script>
     <script language="JavaScript" type="text/javascript" src="./bootstrap/js4/bootstrap.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="goback.js"></script>
-
 
   </body>
 </html>

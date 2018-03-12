@@ -42,7 +42,7 @@
         </div>
 
         <div class="" style="display: flex; justify-content: center; align-items: center;" >
-            <ul style="list-style-type: none; display: flex; justify-content: center; flex: 1;">
+            <ul style="list-style-type: none; display: flex; justify-content: center; align-items: center;">
                 <li>Parc</li>
                 <li>Assistance</li>
                 <li>Gestion</li>
@@ -53,6 +53,22 @@
             <div class="menu_1"><img src="images/icon/three-bars.svg" alt="menu"></div>
         </div>
 
+      </div>
+      <div>
+          <button type="button" class="btn btn-primary" style="background-color: #BDB76B; border-color: #BDB76B; margin-left: 20px;">Accueil</button>
+      </div>
+      <div style="margin: 5px 0px 0px 0px; box-shadow: 0px 2px 20px black inset;">
+          <div>
+              <div>
+                  <ul style="list-style-type: none; display: flex; justify-content: flex-start;">
+                      <li>Vue Personnelle</li>
+                      <li>Vue Groupe</li>
+                      <li>Vue Global</li>
+                      <li>Flux RSS</li>
+                      <li>Tous</li>
+                  </ul>
+              </div>
+          </div>
       </div>
     </header>
   </body>

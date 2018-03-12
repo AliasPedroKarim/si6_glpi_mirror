@@ -1,4 +1,12 @@
-<?php include 'mailconfig.php'; ?>
+<?php include ('inc/mailconfig.php'); ?>
+<?php require ('inc/bdd.php'); ?>
+
+<?php
+  if(isset($_SESSION['id_utilisateur'])) {
+    header('Location: admin.php');
+    exit;
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -7,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/glpi.ico">
 
     <title>GLPI - Mirror</title>
 
@@ -18,9 +26,7 @@
 
     <!-- Custom styles for this template -->
     <link href="bootstrap/docs/examples/narrow-jumbotron.css" rel="stylesheet">
-
     <link href="assets/css/indexcss.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -31,6 +37,7 @@
         <div class="contrainer">
           <div class="row">
             <div class="col-sm-8">
+
 
         <!--config email-->
         <?php
@@ -103,7 +110,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="submit" value="Send" class="btn btn-primary">Envoyer</button>
+        <button type="submit" value="Send" class="btn btn-primary" name="contact">Envoyer</button>
       </div>
     </form>
     </div>
@@ -121,23 +128,24 @@
         <p class="lead">Connectez-vous &agrave; l'aide de votre identifiant et votre mot de passe.</p>
 
 
-        <form>
+        <form method="post" action="#">
+          <?php include('inc/traitement-connexion.php'); ?>
+          <div class="form-group">
+              <div class="input-group mb-2 mr-sm-2 mb-sm-0 formlogin2">
+                  <div class="input-group-addon">@</div>
+                  <input type="text" class="form-control formlogin" id="exampleInputPassword1" name="pseudo" placeholder="Pseudo">
+              </div>
+          </div>
 
-        <div class="form-group">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0 formlogin2">
-                <div class="input-group-addon">@</div>
-            <input type="text" class="form-control formlogin" id="exampleInputPassword1" placeholder="Pseudo">
-        </div>
-        </div>
-
-        <div class="form-group">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0 formlogin2">
+          <div class="form-group">
+              <div class="input-group mb-2 mr-sm-2 mb-sm-0 formlogin2">
                 <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-            <input type="password" class="form-control formlogin" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        </div>
+                <input type="password" class="form-control formlogin" id="exampleInputPassword1" name="mdp" placeholder="Password">
+              </div>
+          </div>
 
-            <p><a class="btn btn-lg btn-success buttonlogin" href="#" role="button">Go</a></p>
+
+              <button type="submit" name="connexion" class="tn btn-lg btn-success buttonlogin">Go</button>
 
         </form>
 

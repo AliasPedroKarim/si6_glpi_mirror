@@ -23,7 +23,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ 
     <!-- Custom styles for this template -->
     <link href="bootstrap/docs/examples/narrow-jumbotron.css" rel="stylesheet">
     <link href="assets/css/indexcss.css" rel="stylesheet">

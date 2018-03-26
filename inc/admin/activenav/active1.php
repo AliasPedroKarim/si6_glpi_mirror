@@ -151,7 +151,7 @@
 
 <br>
 <li class="nav-item">
-  <a class="nav-link" href="#">
+  <a class="nav-link" href="accueil.php">
     <span data-feather="home"></span>
     Retour
   </a>
@@ -162,7 +162,6 @@
     <span data-feather="log-out"></span>
     Déconnexion
   </a>
-</li>
 
 <!-- <li class="nav-item">
   <a class="nav-link" href="admin.php?selector=3">

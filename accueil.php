@@ -101,12 +101,14 @@
                       <div>
                           <h2>Notes Personnelles</h2>
                           <div class="content_note"><p>quelque chose !!!</p>
-                            <img src="images/icon/add-circular-button.svg" style="width: 20px; height: 20px; position: absolute; right: 5px;">
+                            <img src="images/icon/add-circular-button.svg" style="width: 25px; height: 25px; position: absolute; right: 5px; bottom: 0px;">
                           </div>
                       </div>
                       <div>
                           <h2>Notes Publique</h2>
-                          <div class="content_note"></div>
+                          <div class="content_note"><p>quelque chose !!!</p>
+                              <img src="images/icon/add-circular-button.svg" style="width: 25px; height: 25px; position: absolute; right: 5px; bottom: 0px;">
+                          </div>
                       </div>
                   </div>
               </div>
